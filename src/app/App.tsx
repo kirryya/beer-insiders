@@ -11,7 +11,7 @@ import {
   useTypedDispatch,
 } from 'state';
 
-import 'App.scss';
+import './App.scss';
 
 export const App = (): ReturnComponentType => {
   const dispatch = useTypedDispatch();
