@@ -1,3 +1,5 @@
+@import "src/common/styles/sass/mixins";
+
 .information {
   display: flex;
 
@@ -8,22 +10,11 @@
     height: 100px;
 
     .heading {
-      font-family: 'Rubik', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #000000;
+      @include fontHeading;
     }
 
     .content {
-      font-family: 'Rubik', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
+      @include fontStyle(400, 16px, 24px);
     }
   }
 
@@ -35,23 +26,11 @@
     margin-left: 7.7%;
 
     .heading {
-      font-family: 'Rubik', sans-serif;
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      color: #000000;
+      @include fontHeading;
     }
 
     .content {
-      font-family: 'Rubik', sans-serif;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
+      @include fontStyle(400, 16px, 24px);
     }
-
   }
 }

@@ -35,9 +35,16 @@ type litersByTypeGroupsAndStylesTotalsType = {
 };
 
 type typeGroupsType = {
-  litersByStyles: {};
   typeGroupId: string;
-  typeGroupName: string;
+  typeGroupName: 'пиво в кегах' | 'пиво' | 'сидр';
+  litersByStyles: {
+    ['Охмеленный эль IPA/APA']?: number;
+    ['Бланш/Витбир']?: number;
+    ['Светлый лагер']?: number;
+    ['Темный лагер']?: number;
+    ['Английский эль']?: number;
+    ['Фруктовый сидр']?: number;
+  };
 };
 
 type productsCountByCountryTotalsType = {};

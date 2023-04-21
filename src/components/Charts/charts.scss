@@ -1,13 +1,11 @@
+@import "src/common/styles/sass/mixins";
+
 main {
   display: flex;
   flex-direction: column;
 
   .header {
-    font-family: 'Rubik', sans-serif;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 40px;
-    line-height: 47px;
+    @include fontStyle(600, 40px, 47px);
     margin-left: 3%;
 
     color: #000000;
@@ -16,7 +14,7 @@ main {
   .analytic-data {
     margin-top: 10%;
     margin-left: 7%;
-    width: 40%;
+    width: 70%;
     height: 100%;
     display: flex;
     justify-content: space-between;

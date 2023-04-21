@@ -1,5 +1,7 @@
+@import "src/common/styles/sass/mixins";
+
 aside {
-  border-right: 1px solid rgba(0, 0, 0, .5);
+  border-right: 1px solid rgba(0, 0, 0, 0.5);
   -webkit-background-clip: padding-box;
   background-clip: padding-box;
   width: 18%;
@@ -22,11 +24,7 @@ aside {
       list-style-type: none;
 
       span {
-        font-family: 'Rubik', sans-serif;
-        font-style: normal;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19px;
+        @include fontStyle(400, 16px, 19px);
 
         color: #000000;
         opacity: 0.5;

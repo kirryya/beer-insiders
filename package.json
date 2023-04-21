@@ -28,7 +28,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "prepare": "husky install",
-    "lint-fix": "eslint --fix"
+    "lint-fix": "eslint --fix",
+    "prettier-fix": "prettier . --write"
   },
   "lint-staged": {
     "**/*.{js,ts,jsx,tsx}": [

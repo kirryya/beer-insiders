@@ -1,8 +1,6 @@
-
 The application contains a page with analytics, which is displayed in the form of graphs.
 
 Stack: React, Redux, Axios, Rechats, Sass, Typescript.
-
 
 # Getting Started with Create React App
 
@@ -14,4 +12,3 @@ In the project directory, you can run:
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-

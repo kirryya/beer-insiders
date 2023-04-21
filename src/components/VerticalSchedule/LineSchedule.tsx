@@ -1,57 +1,58 @@
 import React from 'react';
 
-// eslint-disable-next-line import/no-extraneous-dependencies
-import { faker } from '@faker-js/faker';
-import {
-  CategoryScale,
-  Chart as ChartJS,
-  Legend,
-  LineElement,
-  PointElement,
-  Title,
-  Tooltip,
-} from 'chart.js';
-import { Line } from 'react-chartjs-2';
+import { useSelector } from 'react-redux';
+import { Bar, CartesianGrid, ComposedChart, Tooltip, XAxis, YAxis } from 'recharts';
 
-import { ReturnComponentType } from 'common/types';
+import { AnalyticType, ReturnComponentType } from 'common/types';
+import { AppRootStateType } from 'state';
 
 export const LineSchedule = (): ReturnComponentType => {
-  // const { beers } = useSelector<AppRootStateType, InitialStateType>(state => state.analytic);
+  const analytic = useSelector<AppRootStateType, AnalyticType>(
+    state => state.analytic.analytic,
+  );
 
-  ChartJS.register(CategoryScale, PointElement, LineElement, Title, Tooltip, Legend);
+  const dataChart = analytic.data?.litersByTypeGroupsAndStylesTotals?.find(({ year }) => {
+    return year === '2022';
+  })?.typeGroups[0].litersByStyles;
 
-  const options = {
-    responsive: true,
-    plugins: {
-      legend: {
-        position: 'bottom' as const,
-      },
-      title: {
-        display: true,
-        text: 'Chart.js Line Chart',
-      },
-    },
-  };
+  const data = [];
+  const N = 256;
+  const M = 16;
 
-  const labels = ['January', 'February', 'March', 'April', 'May', 'June', 'July'];
+  if (dataChart) {
+    // eslint-disable-next-line no-restricted-syntax
+    for (const item of Object.entries(dataChart)) {
+      const r = Math.floor(Math.random() * N);
+      const g = Math.floor(Math.random() * N);
+      const b = Math.floor(Math.random() * N);
+      const color = `#${r.toString(M)}${g.toString(M)}${b.toString(M)}`;
+      const newObj = { name: item[0], [`${item[0]}`]: item[1], color };
 
-  const data = {
-    labels,
-    datasets: [
-      {
-        label: 'Dataset 1',
-        data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: 'rgb(255, 99, 132)',
-        backgroundColor: 'rgba(255, 99, 132, 0.5)',
-      },
-      {
-        label: 'Dataset 2',
-        data: labels.map(() => faker.datatype.number({ min: -1000, max: 1000 })),
-        borderColor: 'rgb(53, 162, 235)',
-        backgroundColor: 'rgba(53, 162, 235, 0.5)',
-      },
-    ],
-  };
+      data.push(newObj);
+    }
+  }
 
-  return <Line options={options} data={data} />;
+  return (
+    <ComposedChart
+      layout="vertical"
+      width={400}
+      height={200}
+      data={data}
+      margin={{
+        top: 20,
+        right: 20,
+        bottom: 20,
+        left: 20,
+      }}
+    >
+      <CartesianGrid stroke="#f5f5f5" />
+      <XAxis type="number" />
+      <YAxis dataKey="name" type="category" scale="band" hide />
+      <Tooltip />
+
+      {data.map(({ name, color }) => {
+        return <Bar key={color} dataKey={name} barSize={20} fill={color} />;
+      })}
+    </ComposedChart>
+  );
 };

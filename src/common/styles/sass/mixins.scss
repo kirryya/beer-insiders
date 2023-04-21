@@ -1,0 +1,18 @@
+@mixin fontStyle( $fontWeight, $fontSize, $lineHeight ) {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: $fontWeight;
+  font-size: $fontSize;
+  line-height: $lineHeight;
+}
+
+@mixin fontHeading() {
+  font-family: 'Rubik', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
