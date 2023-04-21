@@ -1,4 +1,4 @@
-export type BeerType = {
+export type AnalyticType = {
   ordersCount: number;
   data: {
     countByProductVolumeTotals: countByProductVolumeTotalsType[];

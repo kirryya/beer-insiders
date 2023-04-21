@@ -1,0 +1,57 @@
+.information {
+  display: flex;
+
+  .distribution {
+    display: flex;
+    flex-direction: column;
+    width: 417px;
+    height: 100px;
+
+    .heading {
+      font-family: 'Rubik', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    .content {
+      font-family: 'Rubik', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .useful-links {
+    display: flex;
+    flex-direction: column;
+    width: 385px;
+    height: 124px;
+    margin-left: 7.7%;
+
+    .heading {
+      font-family: 'Rubik', sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    .content {
+      font-family: 'Rubik', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+  }
+}

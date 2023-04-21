@@ -1,0 +1,410 @@
+{
+  "ordersCount": 19,
+  "data": {
+    "litersByTypeGroupsAndStylesTotals": [
+      {
+        "year": "2022",
+        "typeGroups": [
+          {
+            "typeGroupId": "6401f0f1b08b1a814c1649e9",
+            "typeGroupName": "пиво в кегах",
+            "litersByStyles": {
+              "Охмеленный эль IPA/APA": 20,
+              "Бланш/Витбир": 120,
+              "Светлый лагер": 150
+            }
+          },
+          {
+            "typeGroupId": "62bc23a661a6270c31cab20b",
+            "typeGroupName": "пиво",
+            "litersByStyles": {
+              "Бланш/Витбир": 3,
+              "Светлый лагер": 1,
+              "Охмеленный эль IPA/APA": 7,
+              "Английский эль": 6
+            }
+          },
+          {
+            "typeGroupId": "62bc23a661a6270c31cab20c",
+            "typeGroupName": "сидр",
+            "litersByStyles": {
+              "Фруктовый сидр": 8
+            }
+          }
+        ]
+      },
+      {
+        "year": "2023",
+        "typeGroups": [
+          {
+            "typeGroupId": "6401f0f1b08b1a814c1649e9",
+            "typeGroupName": "пиво в кегах",
+            "litersByStyles": {
+              "Охмеленный эль IPA/APA": 20,
+              "Светлый лагер": 60,
+              "Бланш/Витбир": 20
+            }
+          },
+          {
+            "typeGroupId": "62bc23a661a6270c31cab20c",
+            "typeGroupName": "сидр",
+            "litersByStyles": {
+              "Фруктовый сидр": 4
+            }
+          },
+          {
+            "typeGroupId": "62bc23a661a6270c31cab20b",
+            "typeGroupName": "пиво",
+            "litersByStyles": {
+              "Светлый лагер": 1,
+              "Охмеленный эль IPA/APA": 4,
+              "Английский эль": 4,
+              "Бланш/Витбир": 2,
+              "Темный лагер": 1
+            }
+          }
+        ]
+      }
+    ],
+    "sumAndCountByMonthYearTotals": [
+      {
+        "months": [
+          {
+            "month": "09",
+            "orderCount": 1,
+            "orderTotalSumRub": 6702
+          },
+          {
+            "month": "11",
+            "orderCount": 6,
+            "orderTotalSumRub": 37414
+          },
+          {
+            "month": "12",
+            "orderCount": 1,
+            "orderTotalSumRub": 4230
+          },
+          {
+            "month": "08",
+            "orderCount": 2,
+            "orderTotalSumRub": 12472
+          },
+          {
+            "month": "10",
+            "orderCount": 3,
+            "orderTotalSumRub": 23414
+          }
+        ],
+        "yearOrderCount": 13,
+        "yearOrderTotalSumRub": 84232,
+        "year": "2022"
+      },
+      {
+        "months": [
+          {
+            "month": "04",
+            "orderCount": 1,
+            "orderTotalSumRub": 14522
+          },
+          {
+            "month": "03",
+            "orderCount": 3,
+            "orderTotalSumRub": 17958
+          },
+          {
+            "month": "02",
+            "orderCount": 2,
+            "orderTotalSumRub": 8454
+          }
+        ],
+        "yearOrderCount": 6,
+        "yearOrderTotalSumRub": 40934,
+        "year": "2023"
+      }
+    ],
+    "sumByCountryTotals": {
+      "2022": {
+        "year": "2022",
+        "months": [
+          {
+            "month": "08",
+            "ordersSumByCountry": {
+              "": 630,
+              "Россия": 11842
+            },
+            "ordersCountByCountry": {
+              "": 1,
+              "Россия": 8
+            },
+            "totalSum": 12472
+          },
+          {
+            "month": "09",
+            "ordersSumByCountry": {
+              "": 1560,
+              "Россия": 5142
+            },
+            "ordersCountByCountry": {
+              "": 1,
+              "Россия": 5
+            },
+            "totalSum": 6702
+          },
+          {
+            "month": "10",
+            "ordersSumByCountry": {
+              "Россия": 22634,
+              "": 780
+            },
+            "ordersCountByCountry": {
+              "Россия": 16,
+              "": 1
+            },
+            "totalSum": 23414
+          },
+          {
+            "month": "11",
+            "ordersSumByCountry": {
+              "Россия": 35224,
+              "": 2190
+            },
+            "ordersCountByCountry": {
+              "Россия": 20,
+              "": 3
+            },
+            "totalSum": 37414
+          },
+          {
+            "month": "12",
+            "ordersSumByCountry": {
+              "Россия": 4230
+            },
+            "ordersCountByCountry": {
+              "Россия": 5
+            },
+            "totalSum": 4230
+          }
+        ],
+        "totalSum": 84232,
+        "ordersSumByCountry": {
+          "": 5160,
+          "Россия": 79072
+        }
+      },
+      "2023": {
+        "year": "2023",
+        "months": [
+          {
+            "month": "02",
+            "ordersSumByCountry": {
+              "": 1608,
+              "Россия": 6846
+            },
+            "ordersCountByCountry": {
+              "": 2,
+              "Россия": 9
+            },
+            "totalSum": 8454
+          },
+          {
+            "month": "03",
+            "ordersSumByCountry": {
+              "Россия": 17958
+            },
+            "ordersCountByCountry": {
+              "Россия": 13
+            },
+            "totalSum": 17958
+          },
+          {
+            "month": "04",
+            "ordersSumByCountry": {
+              "Чехия": 1500,
+              "Россия": 13022
+            },
+            "ordersCountByCountry": {
+              "Чехия": 2,
+              "Россия": 7
+            },
+            "totalSum": 14522
+          }
+        ],
+        "totalSum": 40934,
+        "ordersSumByCountry": {
+          "": 1608,
+          "Россия": 37826,
+          "Чехия": 1500
+        }
+      }
+    },
+    "productsCountByCountryTotals": {
+      "2022": {
+        "year": "2022",
+        "months": [
+          {
+            "month": "08",
+            "productsCountByCountry": {
+              "Россия": 8,
+              "": 1
+            },
+            "totalProductsCount": 9
+          },
+          {
+            "month": "09",
+            "productsCountByCountry": {
+              "": 1,
+              "Россия": 5
+            },
+            "totalProductsCount": 6
+          },
+          {
+            "month": "10",
+            "productsCountByCountry": {
+              "": 1,
+              "Россия": 16
+            },
+            "totalProductsCount": 17
+          },
+          {
+            "month": "11",
+            "productsCountByCountry": {
+              "": 3,
+              "Россия": 20
+            },
+            "totalProductsCount": 23
+          },
+          {
+            "month": "12",
+            "productsCountByCountry": {
+              "Россия": 5
+            },
+            "totalProductsCount": 5
+          }
+        ],
+        "totalProductsCount": 60,
+        "productsCountByCountry": {
+          "Россия": 54,
+          "": 6
+        }
+      },
+      "2023": {
+        "year": "2023",
+        "months": [
+          {
+            "month": "02",
+            "productsCountByCountry": {
+              "Россия": 9,
+              "": 2
+            },
+            "totalProductsCount": 11
+          },
+          {
+            "month": "03",
+            "productsCountByCountry": {
+              "Россия": 13
+            },
+            "totalProductsCount": 13
+          },
+          {
+            "month": "04",
+            "productsCountByCountry": {
+              "Россия": 7,
+              "Чехия": 2
+            },
+            "totalProductsCount": 9
+          }
+        ],
+        "totalProductsCount": 33,
+        "productsCountByCountry": {
+          "Россия": 29,
+          "": 2,
+          "Чехия": 2
+        }
+      }
+    },
+    "countByProductVolumeTotals": [
+      {
+        "year": "2022",
+        "months": [
+          {
+            "month": "09",
+            "volumes": {
+              "0,5": 53
+            }
+          },
+          {
+            "month": "11",
+            "volumes": {
+              "30": 6,
+              "0,5": 96,
+              "0,45": 43
+            }
+          },
+          {
+            "month": "12",
+            "volumes": {
+              "0,45": 18,
+              "0,5": 18
+            }
+          },
+          {
+            "month": "08",
+            "volumes": {
+              "20": 1,
+              "0,45": 18,
+              "0,5": 48
+            }
+          },
+          {
+            "month": "10",
+            "volumes": {
+              "30": 3,
+              "0,5": 78,
+              "0,45": 30
+            }
+          }
+        ],
+        "volumes": {
+          "20": 1,
+          "30": 9,
+          "0,5": 293,
+          "0,45": 109
+        }
+      },
+      {
+        "year": "2023",
+        "months": [
+          {
+            "month": "04",
+            "volumes": {
+              "20": 2,
+              "0,5": 22,
+              "0,45": 24
+            }
+          },
+          {
+            "month": "03",
+            "volumes": {
+              "30": 2,
+              "0,45": 16,
+              "0,5": 66
+            }
+          },
+          {
+            "month": "02",
+            "volumes": {
+              "0,5": 54,
+              "0,45": 12
+            }
+          }
+        ],
+        "volumes": {
+          "20": 2,
+          "30": 2,
+          "0,5": 142,
+          "0,45": 52
+        }
+      }
+    ]
+  }
+}

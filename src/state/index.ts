@@ -1,5 +1,6 @@
 export { store, useTypedDispatch } from './store';
-export { getBeers, loading, setError } from './actions/beer';
-export type { BeersActionsType } from './reducers/beer/types';
+export { getAnalytic, loading, setError } from 'state/actions/analytic';
+export type { AnalyticActionsType } from './reducers/analytic/types';
 export type { TypedDispatch, AppRootStateType } from './store';
-export { fetchBeers } from './thunks/beer';
+export { fetchAnalytic } from 'state/thunks/analytic';
+export type { InitialStateType } from 'state/reducers/analytic/types';

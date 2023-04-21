@@ -1,3 +1,3 @@
-export type { Nullable } from 'common/types/Nullable';
-export type { ReturnComponentType } from 'common/types/ReturnComponentType';
-export type { BeerType } from 'common/types/BeerType';
+export type { Nullable } from './Nullable';
+export type { ReturnComponentType } from './ReturnComponentType';
+export type { AnalyticType } from 'common/types/AnalyticType';
