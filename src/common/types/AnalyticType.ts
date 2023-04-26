@@ -3,7 +3,7 @@ export type AnalyticType = {
   data: {
     countByProductVolumeTotals: CountByProductVolumeTotalsType[];
     litersByTypeGroupsAndStylesTotals: LitersByTypeGroupsAndStylesTotalsType[];
-    productsCountByCountryTotals: ProductsCountByCountryTotalsType[];
+    productsCountByCountryTotals: ProductsCountByCountryTotalsType;
     sumAndCountByMonthYearTotals: SumAndCountByMonthYearTotalsType[];
     sumByCountryTotals: SumByCountryTotalsType[];
   };
@@ -50,6 +50,30 @@ type TypeGroupsType = {
 export type TypeGroupNameType = 'пиво в кегах' | 'пиво' | 'сидр';
 export type CurrentYearType = '2022' | '2023';
 
-type ProductsCountByCountryTotalsType = {};
+type ProductsCountByCountryTotalsType = {
+  ['2022']: YearType;
+  ['2023']: YearType;
+};
+
+type YearType = {
+  year: string;
+  months: MonthsProductType[];
+  totalProductsCount: number;
+  productsCountByCountry: {
+    ['Россия']?: number;
+    ['']?: number;
+    ['Чехия']?: number;
+  };
+};
+
+type MonthsProductType = {
+  month: string;
+  productsCountByCountry: {
+    ['Россия']?: number;
+    ['']?: number;
+    ['Чехия']?: number;
+  };
+  totalProductsCount: number;
+};
 type SumAndCountByMonthYearTotalsType = {};
 type SumByCountryTotalsType = {};

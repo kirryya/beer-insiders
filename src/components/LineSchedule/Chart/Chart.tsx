@@ -33,13 +33,13 @@ export const Chart = ({ data }: ChartType): ReturnComponentType => {
   return (
     <BarChart
       layout="vertical"
-      width={500}
+      width={450}
       height={200}
       data={data}
       margin={{
         top: 20,
-        right: 25,
-        left: 25,
+        right: 10,
+        left: 10,
       }}
     >
       <XAxis type="number" hide />
