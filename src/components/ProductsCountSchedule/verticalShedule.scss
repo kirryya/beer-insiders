@@ -7,8 +7,9 @@
   background-color: #f8f8fa;
   border-radius: 10px;
   padding: 10px;
+  margin-left: 10px;
 
-  .header {
+  .vertical-schedule-header {
     display: flex;
     justify-content: space-between;
 
@@ -28,9 +29,15 @@
       flex-direction: column;
       justify-content: center;
 
+      span {
+        @include fontStyle(600, 16px, 14px);
+        color: #000000;
+        opacity: 0.5;
+      }
+
       .count {
         @include fontStyle(600, 32px, 38px);
-        color: #000000;
+        opacity: 1;
       }
     }
   }

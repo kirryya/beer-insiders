@@ -28,7 +28,7 @@ export const ProductsCountSchedule = (): ReturnComponentType => {
 
   return (
     <div className="vertical-schedule">
-      <div className="header">
+      <div className="vertical-schedule-header">
         <div className="header-block">
           <span>Динамика заказов</span>
           <span className="count">
