@@ -14,6 +14,22 @@ type DataType = {
 };
 
 export const Chart = ({ data }: ChartType): ReturnComponentType => {
+  const bars = data.map(({ name, color }) => {
+    return (
+      <Bar
+        key={color}
+        dataKey={name}
+        fill={color}
+        barSize={15}
+        radius={10}
+        style={{ padding: '20px' }}
+        stackId="a"
+      >
+        <LabelList dataKey={name} position="right" />
+      </Bar>
+    );
+  });
+
   return (
     <BarChart
       layout="vertical"
@@ -34,14 +50,9 @@ export const Chart = ({ data }: ChartType): ReturnComponentType => {
         type="category"
         axisLine={false}
         tickLine={false}
+        allowDecimals={false}
       />
-      {data.map(({ name, color }) => {
-        return (
-          <Bar key={color} dataKey={name} fill={color} barSize={15} radius={10}>
-            <LabelList dataKey={name} position="right" />
-          </Bar>
-        );
-      })}
+      {bars}
     </BarChart>
   );
 };
