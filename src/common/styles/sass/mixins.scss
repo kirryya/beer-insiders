@@ -1,4 +1,4 @@
-@mixin fontStyle( $fontWeight, $fontSize, $lineHeight ) {
+@mixin fontStyle($fontWeight, $fontSize, $lineHeight) {
   font-family: 'Rubik', sans-serif;
   font-style: normal;
   font-weight: $fontWeight;

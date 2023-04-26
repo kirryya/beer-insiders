@@ -1,5 +1,6 @@
+import { InitialStateType, AnalyticActionsType } from './types';
+
 import { GET_ANALYTIC, initialState, LOADING, SET_ERROR } from 'constants/analytic';
-import { InitialStateType, AnalyticActionsType } from 'state/reducers/analytic/types';
 
 export const analyticReducer = (
   // eslint-disable-next-line default-param-last

@@ -1,15 +1,15 @@
 export type AnalyticType = {
   ordersCount: number;
   data: {
-    countByProductVolumeTotals: countByProductVolumeTotalsType[];
-    litersByTypeGroupsAndStylesTotals: litersByTypeGroupsAndStylesTotalsType[];
-    productsCountByCountryTotals: productsCountByCountryTotalsType[];
-    sumAndCountByMonthYearTotals: sumAndCountByMonthYearTotalsType[];
-    sumByCountryTotals: sumByCountryTotalsType[];
+    countByProductVolumeTotals: CountByProductVolumeTotalsType[];
+    litersByTypeGroupsAndStylesTotals: LitersByTypeGroupsAndStylesTotalsType[];
+    productsCountByCountryTotals: ProductsCountByCountryTotalsType[];
+    sumAndCountByMonthYearTotals: SumAndCountByMonthYearTotalsType[];
+    sumByCountryTotals: SumByCountryTotalsType[];
   };
 };
 
-type countByProductVolumeTotalsType = {
+type CountByProductVolumeTotalsType = {
   year: string;
   volumes: {
     '0,5': number;
@@ -17,9 +17,9 @@ type countByProductVolumeTotalsType = {
     '20': number;
     '30': number;
   };
-  months: monthsType[];
+  months: MonthsType[];
 };
-type monthsType = {
+type MonthsType = {
   month: string;
   volumes: {
     '0,5'?: number;
@@ -29,14 +29,14 @@ type monthsType = {
   };
 };
 
-type litersByTypeGroupsAndStylesTotalsType = {
+type LitersByTypeGroupsAndStylesTotalsType = {
   year: string;
-  typeGroups: typeGroupsType[];
+  typeGroups: TypeGroupsType[];
 };
 
-type typeGroupsType = {
+type TypeGroupsType = {
   typeGroupId: string;
-  typeGroupName: 'пиво в кегах' | 'пиво' | 'сидр';
+  typeGroupName: TypeGroupNameType;
   litersByStyles: {
     ['Охмеленный эль IPA/APA']?: number;
     ['Бланш/Витбир']?: number;
@@ -47,6 +47,9 @@ type typeGroupsType = {
   };
 };
 
-type productsCountByCountryTotalsType = {};
-type sumAndCountByMonthYearTotalsType = {};
-type sumByCountryTotalsType = {};
+export type TypeGroupNameType = 'пиво в кегах' | 'пиво' | 'сидр';
+export type CurrentYearType = '2022' | '2023';
+
+type ProductsCountByCountryTotalsType = {};
+type SumAndCountByMonthYearTotalsType = {};
+type SumByCountryTotalsType = {};
