@@ -6,23 +6,17 @@
   .main {
     display: flex;
     height: 80%;
-    width: 100vw;
+    width: 98vw;
 
     .analytics-container {
       width: 82%;
       height: 100%;
     }
   }
-
-  @media screen and (max-height: 1246px) {
-    .main {
-      height: 75%;
-    }
-  }
-
   @media screen and (max-height: 982px) {
     .main {
-      height: 70%;
+      height: 100%;
+      width: 98vw;
     }
   }
 
