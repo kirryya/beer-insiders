@@ -19,7 +19,7 @@ type DataType = {
 export const ProductLineChart = ({ data }: ProductLineChartType): ReturnComponentType => {
   return (
     <LineChart
-      width={570}
+      width={500}
       height={250}
       data={data}
       margin={{ top: 5, right: 30, left: 30, bottom: 5 }}

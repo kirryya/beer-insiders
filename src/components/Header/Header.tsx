@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { ReturnComponentType } from 'common/types';
+import { ReturnComponentType } from 'common';
 
 import './header.scss';
 

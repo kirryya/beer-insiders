@@ -5,7 +5,7 @@ import github from 'assets/github.jpg';
 import instagram from 'assets/instagram.jpg';
 import nba from 'assets/nba.jpg';
 import twitter from 'assets/twitter.jpg';
-import { ReturnComponentType } from 'common/types';
+import { ReturnComponentType } from 'common';
 
 import './footer.scss';
 

@@ -24,7 +24,6 @@ export const LitresBarChart = ({ data }: ChartType): ReturnComponentType => {
             fill={color}
             barSize={15}
             radius={10}
-            style={{ padding: '20px' }}
             stackId="a"
           >
             <LabelList dataKey={name} position="right" />
@@ -37,7 +36,7 @@ export const LitresBarChart = ({ data }: ChartType): ReturnComponentType => {
   return (
     <BarChart
       layout="vertical"
-      width={420}
+      width={450}
       height={200}
       data={data}
       margin={{

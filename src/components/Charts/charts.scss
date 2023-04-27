@@ -13,11 +13,11 @@ main {
 
   .analytics-data {
     margin-top: 7%;
-    margin-left: 3%;
-    width: 85%;
+    width: 100%;
     height: 100%;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   }
 
   .error {

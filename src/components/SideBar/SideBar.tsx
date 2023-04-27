@@ -1,7 +1,7 @@
 import React from 'react';
 
 import logo from 'assets/logo.jpg';
-import { ReturnComponentType } from 'common/types';
+import { ReturnComponentType } from 'common';
 
 import './sideBar.scss';
 
