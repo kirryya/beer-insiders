@@ -1,15 +1,15 @@
-import { InitialStateType, AnalyticActionsType } from './types';
+import { InitialStateType, AnalyticsActionsType } from './types';
 
-import { GET_ANALYTIC, initialState, LOADING, SET_ERROR } from 'constants/analytic';
+import { GET_ANALYTICS, initialState, LOADING, SET_ERROR } from 'constants/analytics';
 
-export const analyticReducer = (
+export const analyticsReducer = (
   // eslint-disable-next-line default-param-last
   state: InitialStateType = initialState,
-  action: AnalyticActionsType,
+  action: AnalyticsActionsType,
 ): InitialStateType => {
   switch (action.type) {
-    case GET_ANALYTIC:
-      return { ...state, analytic: action.analytic };
+    case GET_ANALYTICS:
+      return { ...state, analytics: action.analytics };
     case LOADING:
       return { ...state, isLoading: action.isLoading };
     case SET_ERROR:

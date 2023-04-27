@@ -11,12 +11,17 @@ main {
     color: #000000;
   }
 
-  .analytic-data {
+  .analytics-data {
     margin-top: 7%;
     margin-left: 3%;
     width: 85%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+  }
+
+  .error {
+    color: red;
+    margin: 5% auto 0;
   }
 }

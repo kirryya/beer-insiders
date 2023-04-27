@@ -2,11 +2,12 @@ import { useDispatch } from 'react-redux';
 import { applyMiddleware, combineReducers, createStore } from 'redux';
 import thunkMiddleware, { ThunkDispatch } from 'redux-thunk';
 
-import { analyticReducer } from 'state/reducers/analytic/analytic';
-import { AnalyticActionsType } from 'state/reducers/analytic/types';
+import { analyticsReducer } from './reducers/analytics/analytics';
+
+import { AnalyticsActionsType } from 'state';
 
 const rootReducer = combineReducers({
-  analytic: analyticReducer,
+  analytics: analyticsReducer,
 });
 
 export const store = createStore(rootReducer, applyMiddleware(thunkMiddleware));
@@ -16,5 +17,5 @@ export const useTypedDispatch = () => useDispatch<TypedDispatch>();
 
 // types
 export type AppRootStateType = ReturnType<typeof rootReducer>;
-export type AppActionType = AnalyticActionsType;
+export type AppActionType = AnalyticsActionsType;
 export type TypedDispatch = ThunkDispatch<AppRootStateType, any, AppActionType>;

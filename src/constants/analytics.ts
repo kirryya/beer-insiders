@@ -1,6 +1,6 @@
-import { AnalyticType } from 'common/types';
+import { AnalyticsType } from 'common';
 
-export const GET_ANALYTIC = 'GET_ANALYTIC';
+export const GET_ANALYTICS = 'GET_ANALYTICS';
 export const SET_ERROR = 'SET_ERROR';
 export const LOADING = 'LOADING';
 
@@ -8,7 +8,7 @@ export const COLOR = 256;
 export const STRING = 16;
 
 export const initialState = {
-  analytic: {} as AnalyticType,
+  analytics: {} as AnalyticsType,
   isLoading: false,
   error: '',
 };

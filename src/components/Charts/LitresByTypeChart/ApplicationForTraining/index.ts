@@ -1,0 +1,1 @@
+export { ApplicationForTraining } from './ApplicationForTraining';

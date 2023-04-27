@@ -1,4 +1,12 @@
-export type AnalyticType = {
+import { YearForSelectType, ProductType, CountryType } from 'enums';
+
+export type TypeGroupNameType =
+  | ProductType.BEER_IN_KEGS
+  | ProductType.BEER
+  | ProductType.CIDER;
+export type CurrentYearType = YearForSelectType.YEAR_2022 | YearForSelectType.YEAR_2023;
+
+export type AnalyticsType = {
   ordersCount: number;
   data: {
     countByProductVolumeTotals: CountByProductVolumeTotalsType[];
@@ -46,13 +54,9 @@ type TypeGroupsType = {
     ['Фруктовый сидр']?: number;
   };
 };
-
-export type TypeGroupNameType = 'пиво в кегах' | 'пиво' | 'сидр';
-export type CurrentYearType = '2022' | '2023';
-
 type ProductsCountByCountryTotalsType = {
-  ['2022']: YearType;
-  ['2023']: YearType;
+  [YearForSelectType.YEAR_2022]: YearType;
+  [YearForSelectType.YEAR_2023]: YearType;
 };
 
 type YearType = {
@@ -60,18 +64,18 @@ type YearType = {
   months: MonthsProductType[];
   totalProductsCount: number;
   productsCountByCountry: {
-    ['Россия']?: number;
-    ['']?: number;
-    ['Чехия']?: number;
+    [CountryType.Russia]?: number;
+    [CountryType.Other]?: number;
+    [CountryType.Czech]?: number;
   };
 };
 
 type MonthsProductType = {
   month: string;
   productsCountByCountry: {
-    ['Россия']?: number;
-    ['']?: number;
-    ['Чехия']?: number;
+    [CountryType.Russia]?: number;
+    [CountryType.Other]?: number;
+    [CountryType.Czech]?: number;
   };
   totalProductsCount: number;
 };

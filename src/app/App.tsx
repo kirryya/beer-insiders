@@ -6,7 +6,7 @@ import { ReturnComponentType } from 'common/types';
 import { Charts, Footer, Header, Information, SideBar } from 'components';
 import {
   AppRootStateType,
-  fetchAnalytic,
+  fetchAnalytics,
   InitialStateType,
   useTypedDispatch,
 } from 'state';
@@ -16,18 +16,18 @@ import './App.scss';
 export const App = (): ReturnComponentType => {
   const dispatch = useTypedDispatch();
   const { isLoading, error } = useSelector<AppRootStateType, InitialStateType>(
-    state => state.analytic,
+    state => state.analytics,
   );
 
   useEffect(() => {
-    dispatch(fetchAnalytic());
+    dispatch(fetchAnalytics());
   }, []);
 
   return (
     <div className="main-container">
       <div className="main">
         <SideBar />
-        <div className="analytic-container">
+        <div className="analytics-container">
           <Header />
           <Charts isLoading={isLoading} error={error} />
         </div>

@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 
 import { Bar, BarChart, LabelList, XAxis, YAxis } from 'recharts';
 
-import { ReturnComponentType } from 'common/types';
+import { ReturnComponentType } from 'common';
 
 type ChartType = {
   data: DataType[];
@@ -13,22 +13,26 @@ type DataType = {
   color: string;
 };
 
-export const Chart = ({ data }: ChartType): ReturnComponentType => {
-  const bars = data.map(({ name, color }) => {
-    return (
-      <Bar
-        key={color}
-        dataKey={name}
-        fill={color}
-        barSize={15}
-        radius={10}
-        style={{ padding: '20px' }}
-        stackId="a"
-      >
-        <LabelList dataKey={name} position="right" />
-      </Bar>
-    );
-  });
+export const LitresBarChart = ({ data }: ChartType): ReturnComponentType => {
+  const bars = useMemo(
+    () =>
+      data.map(({ name, color }) => {
+        return (
+          <Bar
+            key={color}
+            dataKey={name}
+            fill={color}
+            barSize={15}
+            radius={10}
+            style={{ padding: '20px' }}
+            stackId="a"
+          >
+            <LabelList dataKey={name} position="right" />
+          </Bar>
+        );
+      }),
+    [data],
+  );
 
   return (
     <BarChart
@@ -38,7 +42,7 @@ export const Chart = ({ data }: ChartType): ReturnComponentType => {
       data={data}
       margin={{
         top: 20,
-        right: 15,
+        right: 25,
         left: 5,
       }}
     >

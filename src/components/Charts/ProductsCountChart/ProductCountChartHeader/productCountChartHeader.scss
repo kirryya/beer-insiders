@@ -1,0 +1,34 @@
+@import 'src/common/styles/sass/mixins';
+
+.products-count-header {
+  display: flex;
+  justify-content: space-between;
+
+  select {
+    max-height: 20px;
+    max-width: 100px;
+    border: 0;
+    outline: 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .header-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    span {
+      @include fontStyle(600, 16px, 14px);
+      color: #000000;
+      opacity: 0.5;
+    }
+
+    .count {
+      @include fontStyle(600, 32px, 38px);
+      opacity: 1;
+    }
+  }
+}
