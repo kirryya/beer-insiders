@@ -1,6 +1,6 @@
 The application contains a page with analytics, which is displayed in the form of graphs.
 
-Stack: React, Redux, Axios, Rechats, Sass, Typescript.
+Stack: React, Redux, Axios, Recharts, Sass, Typescript.
 
 # Getting Started with Create React App
 
